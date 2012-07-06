@@ -111,12 +111,6 @@ class Site_stats_widget extends Widget {
 		// Retrieve total number of shouts
 		$this->data->total_shouts = $this->CI->shouts->count_shouts();
 		
-		// Load the Events Model
-		$this->CI->load->model('Events_model', 'events');
-		
-		// Retrieve total number of events
-		$this->data->total_events = $this->CI->events->count_events();
-		
 		// Assign the widget info
 		$widget->title = 'Site Stats';
 		$widget->content = $this->CI->load->view('widgets/site_stats', $this->data, TRUE);
