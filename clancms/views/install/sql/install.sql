@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `__DBPREFIX__gallery_comments` (
   `comment_title` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `comment_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`comment_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DDEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;;
 -- command split --
 DROP TABLE IF EXISTS `__DBPREFIX__group_permissions`;
 -- command split --
