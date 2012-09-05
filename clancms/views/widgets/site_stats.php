@@ -20,7 +20,6 @@
 		<li><?php echo anchor('gallery/images', $total_images . ' Images'); ?></li>
 		<li><?php echo anchor('gallery/videos', $total_videos . ' Videos'); ?></li>
 		<li><?php echo anchor('shouts', $total_shouts . ' Shouts'); ?></li>
-		<li><?php echo anchor('events', $total_events . ' Events'); ?></li>
 	</ul>
 	<div class="clear"></div>
 </div>
