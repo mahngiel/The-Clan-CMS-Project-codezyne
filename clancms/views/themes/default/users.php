@@ -33,10 +33,6 @@
 						    <th class="name">User Name</th> 
 						    <th class="name">User Group</th>
 						    <th class="squads">Squads</th>
-						    <th class="social">Social IDs</th> 
-						    <th class="exp">Badges</th> 
-						    <th class="exp">DKP</th> 
-						    <th class="exp">EXP</th>
 						</tr> 
 					</thead> 
 					<tbody> 
@@ -60,42 +56,6 @@
 								<?php endif; ?>
 											
 							</td>
-							<td class="social">
-								<?php if($user->social): ?>
-									<ul class="social">
-										<?php if($user->social->facebook): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook, img(array('src'=> IMAGES . '24/fb.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->twitter): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook, img(array('src'=> IMAGES . '24/twitter-icon.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->steam): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook, img(array('src'=> IMAGES . '24/steam_icon.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->xbox_live): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook,  img(array('src'=> IMAGES . '24/xbox.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->ps_online): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook, img(array('src'=> IMAGES . '24/ps_online.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->skype): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook, img(array('src'=> IMAGES . '24/skype.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->bf3): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook, img(array('src'=> IMAGES . '24/bf3.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->mw3): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook,  img(array('src'=> IMAGES . '24/mw3.png'))); ?></li>
-										<?php endif; ?>
-										<?php if($user->social->youtube): ?>
-											<li class="soc"><?php echo anchor('http://facebook.com/' . $user->social->facebook, img(array('src'=> IMAGES . '24/youtube.png'))); ?></li>
-										<?php endif; ?>
-									</ul>
-								<?php endif; ?>
-							</td>
-							<td class="exp">0</td>
-							<td class="exp">0</td>
-							<td class="exp">0</td>
 						</tr>
 					<?php endforeach; ?>
 					
