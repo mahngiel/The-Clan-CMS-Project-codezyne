@@ -302,7 +302,7 @@ INSERT INTO `__DBPREFIX__settings` (`setting_id`, `category_id`, `setting_title`
 (23, 2, 'Slide Preview Image Width', 'slide_preview_width', '76', 'text', '', 'The width of slide preview images in pixels', 'trim|required|numeric', 8),
 (24, 2, 'Slide Preview Image Height', 'slide_preview_height', '46', 'text', '', 'The height of slide preview images in pixels', 'trim|required|numeric', 9),
 (25, 6, 'Youtube Channel', 'youtube_id', '', 'text', '', 'YouTube channel username', 'trim', 1),
-(26, 6, 'Twitter', 'facebook_id', '', 'text', '', 'Official Twitter Name', 'trim', 2),
+(26, 6, 'Twitter', 'facebook_id', '', 'text', '', 'Official Twitter Name', 'trim', 2);
 -- command split --
 DROP TABLE IF EXISTS `__DBPREFIX__setting_categories`;
 -- command split --
