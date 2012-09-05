@@ -438,20 +438,6 @@ INSERT INTO `__DBPREFIX__user_groups` (`group_id`, `group_title`, `group_user_ti
 (3, 'Team Members', 'Team Member', 1, 0, 1, 0, 0),
 (4, 'Banned Users', 'Banned', 1, 0, 0, 1, 0);
 -- command split --
-DROP TABLE IF EXISTS `__DBPREFIX__user_social`;
--- command split --
-CREATE TABLE IF NOT EXISTS `__DBPREFIX__user_social` (
-  `facebook` varchar(8) NOT NULL,
-  `twitter` varchar(8) NOT NULL,
-  `xbox_live` varchar(8) NOT NULL,
-  `ps_online` varchar(8) NOT NULL,
-  `steam` varchar(8) NOT NULL,
-  `skype` varchar(8) NOT NULL,
-  `user` varchar(8) NOT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
--- command split --
 DROP TABLE IF EXISTS `__DBPREFIX__wall_comments`;
 -- command split --
 CREATE TABLE IF NOT EXISTS `__DBPREFIX__wall_comments` (
