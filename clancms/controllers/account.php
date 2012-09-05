@@ -40,9 +40,6 @@ class Account extends CI_Controller {
 		// Load the Squads model
 		$this->load->model('Squads_model', 'squads');
 		
-		// Load the Social model
-		$this->load->model('Social_model', 'social');
-		
 		// Load the Users model
 		$this->load->model('Users_model', 'users');
 	}
@@ -391,8 +388,7 @@ class Account extends CI_Controller {
 		$this->data->user =& $user;
 		$this->data->members =& $members;
 		$this->data->matches =& $recent_matches;
-		$this->data->social =& $social;
-		$social =& $this->social->get_social($this->uri->segment(3));
+		
 		// Load the profile view
 		$this->load->view(THEME . 'profile', $this->data);
 	}
